@@ -24,7 +24,7 @@
 #' @useDynLib EulerianandHamiltonianCyclesinR, .registration = TRUE
 #' @export
 cykl_hamiltona <- function(graf) {
-  if (!is.matrix(graf)) stop("Graf musi być macierzą.")
+  if (!is.matrix(graf)) stop("Graf musi być macierza.")
   if (!is.integer(graf)) graf <- matrix(as.integer(graf), nrow = nrow(graf))
   
   wynik <- .Call("hammilton", graf)
@@ -59,7 +59,7 @@ cykl_hamiltona <- function(graf) {
 #'
 #' @export
 cykl_eulera <- function(graf) {
-  if (!is.matrix(graf)) stop("Graf musi być macierzą.")
+  if (!is.matrix(graf)) stop("Graf musi być macierza.")
   if (!is.integer(graf)) graf <- matrix(as.integer(graf), nrow = nrow(graf))
   
   # Konwersja macierzy → lista sąsiedztwa (wymagana przez euler.c)
