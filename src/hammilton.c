@@ -3,13 +3,13 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-// Funkcja pomocnicza: sprawdza czy wierzchołek 'v' może być dodany do ścieżki
+// Funkcja pomocnicza: sprawdza czy wierzchołek może być dodany do ścieżki
 bool bezpieczny(int v, SEXP graf, int* sciezka, int pozycja, int n) {
-    // Sprawdź czy istnieje krawędź między ostatnim wierzchołkiem a 'v'
+
     // graf jest macierzą sąsiedztwa
     if (INTEGER(graf)[sciezka[pozycja - 1] + v * n] == 0) return false;
 
-    // 2. Sprawdź czy 'v' już występuje w ścieżce
+    // 2. Sprawdź czy wierzchołek już występuje w ścieżce
     for (int i = 0; i < pozycja; i++) {
         if (sciezka[i] == v) return false;
     }
@@ -34,11 +34,10 @@ bool rekurencja_hammilton(SEXP graf, int* sciezka, int pozycja, int n) {
     return false;
 }
 
-// Funkcja główna wywoływana z R
+// Główna funkcja
 SEXP hammilton(SEXP graf) {
     int n = INTEGER(getAttrib(graf, R_DimSymbol))[0];
     
-    // Alokacja pamięci dla ścieżki
     int* sciezka = (int*)malloc(n * sizeof(int));
     for (int i = 0; i < n; i++) sciezka[i] = -1;
     

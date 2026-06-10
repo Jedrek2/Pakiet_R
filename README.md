@@ -5,14 +5,14 @@ An R package for finding Eulerian and Hamiltonian cycles in graphs using C algor
 ## Description
 
 `Cykle` provides two functions:
-- `cykl_eulera()` — finds an Eulerian cycle using **Hierholzer's algorithm**
-- `cykl_hamiltona()` — finds a Hamiltonian cycle using **backtracking**
+- `cykl_eulera()` — finds an Eulerian cycle using Hierholzer's algorithm
+- `cykl_hamiltona()` — finds a Hamiltonian cycle using backtracking
 
 ## Installation
 
 ```r
 install.packages("devtools")
-devtools::install_github("TwojaNazwa/Cykle")
+devtools::install_github("Jedrek2/Cykle")
 ```
 
 ## Usage

@@ -11,7 +11,7 @@ typedef struct Node {
 SEXP euler(SEXP graf) {
     int n = length(graf);
     
-    // 1. Kopiowanie danych z R do struktur C (tablica list)
+    // 1. Kopiowanie danych z R do struktur C
     Node** grafC = (Node**)malloc(n * sizeof(Node*));
     int wierzcholki_ilosc = 0;
     
