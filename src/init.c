@@ -12,7 +12,8 @@ static const R_CallMethodDef CallEntries[] = {
     {NULL, NULL, 0}
 };
 
-void R_init_Cykle(DllInfo *info) {
+// Zmieniona nazwa funkcji – dokładnie pod Twój obecny pakiet
+void R_init_EulerianandHamiltonianCyclesinR(DllInfo *info) {
     R_registerRoutines(info, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(info, FALSE);
 }
