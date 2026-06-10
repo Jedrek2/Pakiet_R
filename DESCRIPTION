@@ -1,11 +1,15 @@
-Package: Eulerian and Hamiltonian cycles in R
+Package: EulerianandHamiltonianCyclesinR
 Type: Package
-Title: Eulerian and Hamiltonian cycles in R
-Version: 1.0
-Author: Jedrzej Kwasny
-Maintainer: Jedrzej Kwasny <jedrzejkwasny2@gmail.com>
-Description: Algorytmy w C do znajdowania cykli Hamiltona i Eulera w grafie.
+Title: Eulerian and Hamiltonian Cycles in R
+Version: 1.0.0
+Authors@R: 
+    person("Jedrzej", "Kwasny", 
+           email = "jedrzejkwasny2@gmail.com", 
+           role = c("aut", "cre"))
+Description: Efficient algorithms implemented in C for finding Eulerian 
+    and Hamiltonian cycles in graphs.
 License: GPL (>= 2)
 Encoding: UTF-8
-Suggests: testthat (>= 3.0.0)
-Config/roxygen2/version: 8.0.0
+Suggests: 
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
