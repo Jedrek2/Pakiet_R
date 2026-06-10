@@ -1,0 +1,3 @@
+useDynLib(Cykle, .registration = TRUE)
+export(cykl_hamiltona)
+export(cykl_eulera)
