@@ -1,6 +1,6 @@
-Package: Cykle
+Package: Eulerian_and_Hamiltonian_cycles_in_R
 Type: Package
-Title: Euler and Hamiltonian cycles in R
+Title: Eulerian and Hamiltonian cycles in R
 Version: 1.0
 Author: Jedrzej Kwasny
 Maintainer: Jedrzej Kwasny <jedrzejkwasny2@gmail.com>
