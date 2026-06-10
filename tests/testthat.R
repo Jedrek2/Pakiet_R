@@ -1,4 +1,4 @@
 library(testthat)
-library(Cykle)
+library(EulerianandHamiltonianCyclesinR)
 
-test_check("Cykle")
+test_check("EulerianandHamiltonianCyclesinR")
